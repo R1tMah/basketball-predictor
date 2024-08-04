@@ -10,7 +10,7 @@ function getPrediction(){
     }
     
     if(team != null){
-        document.getElementById('prediction-result').innerHTML = `<p>Prediction for the ${team}'s next game generating... (This may take 10-15 seconds)</p>`;
+        document.getElementById('prediction-result').innerHTML = `<p>Prediction for the ${team}'s next game generating... (This may take 15-20 seconds)</p>`;
        
 
         fetch(`http://127.0.0.1:8000/first_game_predictions?team=${team}`)
